@@ -3,21 +3,22 @@
 
 
   class CuboidMaker {
-      constructor(attributes) {
-        this.length = attributes.length;
-        this.width = attributes.width;
-        this.height = attributes.height;
+      constructor(length, width, height) {
+        this.length = length;
+        this.width = width;
+        this.height = height;
       }
 
       volume() {
-        return this.volume = this.length * this.width * this.height;
+        return (this.length * this.width * this.height);
       }
 
       surfaceArea() {
-        return this.surfaceArea = (2 * (this.length * this.width + this.length * this.height + this.width * this.height));
+        return (2 * (this.length * this.width + this.length * this.height + this.width * this.height));
       }
   }
 
+  let cuboid = new CuboidMaker(4, 5, 5);
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
 console.log(cuboid.volume()); // 100
