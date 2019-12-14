@@ -43,7 +43,9 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 // Explain in your own words why nestedfunction can access the variable internal.
 
 // Explanation: 
-
+/* 
+Closures are when there are 2 functions, one inside of another. The inner function is able to access not only the global variables, but also the variables, objects and methods from the outer function. So because nestedFunction is the inner function, it has the ability to access and manipulate the variables of myFunction(the outer function) like 'const internal'.
+*/
 
 const external = "I'm outside the function";
 
