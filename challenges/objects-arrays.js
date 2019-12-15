@@ -209,6 +209,7 @@ const populationTotal =
 
 console.log(populationTotal);
 
+
     
 /*
 
