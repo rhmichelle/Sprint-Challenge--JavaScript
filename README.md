@@ -47,7 +47,12 @@ Edit this document to include your answers after each question. Make sure to lea
 
 
 4. Describe the four rules of the 'this' keyword.
-
+    1. Global-Don't use-Simply points to Javascript...like, the ENTIRE program!
+    2. Implicit: Points to the object it's contained in. It works as a variable that gets assigned to 
+        objects. It applies to the object that is left of the dot.
+    3. New: Used to make new constructors 
+    4. Explicit: CALL, APPLY, and BIND. `this` is non-commital and doesn't want to settle down so it partners up to different
+        objects depending on who calls it.
 
 
 5. Why do we need super() in an extended class?
