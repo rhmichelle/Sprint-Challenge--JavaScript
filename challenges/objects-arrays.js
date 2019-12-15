@@ -83,6 +83,11 @@ const graduates = [
 
 Once you have the new array created, sort the universities alphabetically and log the result. */
 const universities = [];
+for (var i = 0; i < graduates.length; i++) {
+  universities.push(graduates[i].university);
+}
+
+
 console.log(universities);
 
 
@@ -131,14 +136,26 @@ The zoos want to display both the scientific name and the animal name in front o
 const displayNames = [];
 console.log(displayNames);
 
+
+
+
+
+
+
 /* Request 2: .map()
 
-The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the resut.
+The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the result.
 
 */
 
-const lowCaseAnimalNames = [];
+const lowCaseAnimalNames = zooAnimals.map(function(animal) {
+  return animal.animal_name.toLowerCase();
+});
 console.log(lowCaseAnimalNames);
+
+
+
+
 
 /* Request 3: .filter() 
 
