@@ -29,14 +29,31 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your team lead
 
 1. Describe the biggest difference between `.forEach` & `.map`.
+    .forEach only iterates through an array; it doesn't return anything.
+    .map iterates through the elements of an array and creates a new array
+
 
 2. What is the difference between a function and a method?
+    A method is a function inside of an object; a function with a defined `this`.
+
 
 3. What is closure?
 
+    *A* closure is when there is one function inside of another, the inside function has access to the outer function's variables and methods.
+
+    But since you asked: "What is closure?":
+        Closure means finality; a letting go of what once was. Finding closure implies a complete acceptance of what has happened and an honoring of the transition away from what's finished to something new.
+            "5 Ways to Find Closure From the Past" | Psychology Today article.
+
+
 4. Describe the four rules of the 'this' keyword.
 
+
+
 5. Why do we need super() in an extended class?
+    To access and invoke the parent object's functions.
+
+
 
 ## Project Set up
 
@@ -47,9 +64,9 @@ Follow these steps to set up and work on your project:
 - [X] Clone your OWN version of Repo (Not Lambda's by mistake!).
 - [X] Create a new Branch on the clone: git checkout -b `<firstName-lastName>`.
 - [X] Create a pull request before you start working on the project requirements.  You will continuously push your updates throughout the project.
-- [ ] You are now ready to build this project with your preferred IDE
-- [ ] Implement the project on your Branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] You are now ready to build this project with your preferred IDE
+- [X] Implement the project on your Branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project:
 
