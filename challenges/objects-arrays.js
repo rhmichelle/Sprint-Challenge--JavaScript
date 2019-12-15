@@ -110,7 +110,30 @@ console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
+
+
 const unisWithUni = [];
+
+const uniGrad = function(graduates) {
+  if(graduates.university.includes("Uni") === true) {
+    unisWithUni.push(graduates);
+  }
+};
+
+graduates.forEach(uniGrad);
+
+
+
+
+// graduates.forEach(function(student) {
+//   if (student.includes("Uni")===true) {
+//       unisWithUni.push(student)
+//   };
+// });
+
+
+
+
 
 // for (var i = 0; i < graduates.length; i++) {
 //      graduates[i].university.includes("uni")  
@@ -118,6 +141,10 @@ const unisWithUni = [];
 //       unisWithUni.push(graduates);
 //     }
 // }
+
+
+
+
 console.log(unisWithUni);
 
 
@@ -148,6 +175,7 @@ const displayNames = [];
 const names = function(animal) {
   displayNames.push(`Name: ${animal.animal_name} Scientific: ${animal.scientific_name}`)
 }
+
 zooAnimals.forEach(names);
 
 console.log(displayNames);
