@@ -17,13 +17,10 @@ let consume = ((a, b, cb) => cb(a, b));
   * Create a function named greeting that accepts a first and last name and returns "Hello first-name last-name, nice to meet you!"
 */
 
-function add(num1, num2) {
-  return num1 + num2;
-}
+let add = ((num1, num2) => num1 + num2);
 
-function multiply(num1, num2) {
-  return num1 * num2;
-}
+
+let multiply = ((num1, num2) => num1 * num2);
 
 function greeting(firstName, lastName) {
   return `Hello ${firstName} ${lastName}, nice to meet you`;
