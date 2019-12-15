@@ -122,29 +122,6 @@ const uniGrad = function(graduates) {
 
 graduates.forEach(uniGrad);
 
-
-
-
-// graduates.forEach(function(student) {
-//   if (student.includes("Uni")===true) {
-//       unisWithUni.push(student)
-//   };
-// });
-
-
-
-
-
-// for (var i = 0; i < graduates.length; i++) {
-//      graduates[i].university.includes("uni")  
-//   if (graduates[i] = true) {
-//       unisWithUni.push(graduates);
-//     }
-// }
-
-
-
-
 console.log(unisWithUni);
 
 
