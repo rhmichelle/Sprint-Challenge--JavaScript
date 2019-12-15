@@ -112,9 +112,10 @@ console.log(contactInfo);
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called unisWithUni that contains them all. This will be an array of objects. Log the result. */
 const unisWithUni = [];
 
-// for (var i = 0; i < graduates.length; i++) {  
-//   if (graduates[i].university.includes("uni") = true) {
-//       unisWithUni.push(graduates[i]);
+// for (var i = 0; i < graduates.length; i++) {
+//      graduates[i].university.includes("uni")  
+//   if (graduates[i] = true) {
+//       unisWithUni.push(graduates);
 //     }
 // }
 console.log(unisWithUni);
@@ -143,6 +144,12 @@ The zoos want to display both the scientific name and the animal name in front o
 
 */
 const displayNames = [];
+
+const names = function(animal) {
+  displayNames.push(`Name: ${animal.animal_name} Scientific: ${animal.scientific_name}`)
+}
+zooAnimals.forEach(names);
+
 console.log(displayNames);
 
 
@@ -154,13 +161,16 @@ console.log(displayNames);
 /* Request 2: .map()
 
 The zoos need a list of all their animal's names (animal_name only) converted to lower case. Using map, create a new array of strings named lowCaseAnimalNames, each string following this pattern: "jackal, asiatic". Log the result.
-
 */
-
 const lowCaseAnimalNames = zooAnimals.map(function(animal) {
   return animal.animal_name.toLowerCase();
 });
+
 console.log(lowCaseAnimalNames);
+
+
+
+
 
 
 
@@ -174,10 +184,10 @@ The zoos are concerned about animals with a lower population count. Using filter
 const lowPop = function(animals) {
   return animals.population < 5
 };
-
 const lowPopulationAnimals = zooAnimals.filter(lowPop);
 
 console.log(lowPopulationAnimals);
+
 
 
 
