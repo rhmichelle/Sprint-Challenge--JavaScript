@@ -19,12 +19,9 @@ let consume = ((a, b, cb) => cb(a, b));
 
 let add = ((num1, num2) => num1 + num2);
 
-
 let multiply = ((num1, num2) => num1 * num2);
 
-function greeting(firstName, lastName) {
-  return `Hello ${firstName} ${lastName}, nice to meet you`;
-}
+let greeting = ((firstName, lastName) =>`Hello ${firstName} ${lastName}, nice to meet you`);
 
 
 /* Step 3: Check your work by un-commenting the following calls to consume(): */
