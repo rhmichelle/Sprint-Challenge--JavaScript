@@ -56,7 +56,7 @@ Edit this document to include your answers after each question. Make sure to lea
 
 
 5. Why do we need super() in an extended class?
-    To access and invoke the parent object's functions.
+    To access and invoke the parent object's properties and functions.
 
 
 
@@ -76,7 +76,7 @@ Follow these steps to set up and work on your project:
 Follow these steps for completing your project:
 
 - [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your team lead as a Reviewer on the Pull-request
+- [X] Add your team lead as a Reviewer on the Pull-request
 - [ ] TL then will count the HW as done by  merging the branch back into master.
 
 
