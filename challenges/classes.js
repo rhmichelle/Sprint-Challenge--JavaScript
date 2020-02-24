@@ -34,6 +34,7 @@ class CubeMaker extends CuboidMaker {
   constructor(length) {
     super(length);
     this.side = length;
+    this.area = Math.pow(this.side, 2);
   }
 
   volume(side) {
@@ -41,10 +42,10 @@ class CubeMaker extends CuboidMaker {
   }
 
   surfaceArea(side) {
-    return Math.pow(this.side, 3);
+    return this.area * 6;
   }
 }
 
 let cubeTastic = new CubeMaker(4, 4, 4);
-console.log(cubeTastic.volume(4));
+console.log(cubeTastic.volume());
 console.log(cubeTastic.surfaceArea());
